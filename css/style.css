@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .zombie {
+    width: 200px;
+    height: 312px;
+    background: url("http://www.wdrfree.com/public/demos/animatespritekeyframes/walkingdead.png") left center;
+    animation: play 0.8s steps(10) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -2000px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .zombie {
+        border-bottom: 5px solid #1A1D20;
+    }
+}
+
+
