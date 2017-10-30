@@ -9,7 +9,7 @@ function newZombie() {
 
 var setI = setInterval(function () {
     newZombie();
-}, 1600);
+}, 1000);
 
 function stopI() {
     if (counter === 6) {
